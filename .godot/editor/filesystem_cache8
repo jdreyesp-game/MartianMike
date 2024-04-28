@@ -1,0 +1,34 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1714215556
+icon.svg::CompressedTexture2D::8781121514921068768::1714215278::1714215281::1::::<><>::
+::res://assets/::1714215545
+::res://assets/audio/::1714215545
+hurt.wav::AudioStreamWAV::3845608044490238982::1714215545::1714215557::1::::<><>::
+jump.wav::AudioStreamWAV::6246741334914327270::1714215545::1714215557::1::::<><>::
+::res://assets/fonts/::1714215545
+Kenney Pixel Square.ttf::FontFile::2436595608310747492::1714215545::1714215557::1::::<><>::
+::res://assets/textures/::1714215545
+Terrain (16x16).png::CompressedTexture2D::3349751273074254308::1714215545::1714215557::1::::<><>::
+::res://assets/textures/bg/::1714215545
+Blue.png::CompressedTexture2D::7710092386780193953::1714215545::1714215557::1::::<><>::
+Brown.png::CompressedTexture2D::3128127310103506501::1714215545::1714215557::1::::<><>::
+Gray.png::CompressedTexture2D::97439272028582716::1714215545::1714215557::1::::<><>::
+Green.png::CompressedTexture2D::7607762355398036473::1714215545::1714215557::1::::<><>::
+Pink.png::CompressedTexture2D::1432356250893053803::1714215545::1714215557::1::::<><>::
+Purple.png::CompressedTexture2D::4760235491759276274::1714215545::1714215557::1::::<><>::
+Yellow.png::CompressedTexture2D::1415523386827237115::1714215545::1714215557::1::::<><>::
+::res://assets/textures/other/::1714215545
+End (Idle).png::CompressedTexture2D::2467062344205294818::1714215545::1714215557::1::::<><>::
+End (Pressed) (64x64).png::CompressedTexture2D::5663371414469149186::1714215545::1714215557::1::::<><>::
+Idle.png::CompressedTexture2D::1738920235312860952::1714215545::1714215557::1::::<><>::
+Jump (28x28).png::CompressedTexture2D::1231523800935075631::1714215545::1714215557::1::::<><>::
+Saw.png::CompressedTexture2D::7544842168007595191::1714215545::1714215557::1::::<><>::
+Spiked Ball.png::CompressedTexture2D::4606267842021625861::1714215545::1714215557::1::::<><>::
+Start.png::CompressedTexture2D::269780927911342924::1714215545::1714215557::1::::<><>::
+::res://assets/textures/player/::1714215545
+Fall (32x32).png::CompressedTexture2D::4325625770176483657::1714215545::1714215557::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::8315542796349945190::1714215545::1714215557::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::6607504316347446893::1714215545::1714215557::1::::<><>::
+Run (32x32).png::CompressedTexture2D::1935591882642648474::1714215545::1714215557::1::::<><>::
+::res://scenes/::1714215498
+::res://scripts/::1714215502
