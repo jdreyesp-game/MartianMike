@@ -10,3 +10,7 @@ res://scenes/spike_ball.tscn
 res://scenes/tile_map.tscn
 res://scenes/bg.tscn
 res://scripts/bg.gd
+res://scenes/start.tscn
+res://scripts/start.gd
+res://scenes/exit.tscn
+res://scripts/exit.gd
