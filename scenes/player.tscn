@@ -211,7 +211,7 @@ shape = SubResource("RectangleShape2D_hx2mk")
 sprite_frames = SubResource("SpriteFrames_vf8ci")
 animation = &"run"
 autoplay = "idle"
-frame_progress = 0.086662
+frame_progress = 0.142539
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_bottom = 157
