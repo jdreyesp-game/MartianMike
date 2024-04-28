@@ -1,4 +1,4 @@
 res://scenes/level.tscn
-res://scripts/level.gd
-res://scenes/player.tscn
 res://scripts/player.gd
+res://scenes/player.tscn
+res://scripts/level.gd

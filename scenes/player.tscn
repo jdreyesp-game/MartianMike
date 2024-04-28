@@ -196,10 +196,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 20.0
+"speed": 25.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 2
 script = ExtResource("1_eo8ax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -208,5 +209,9 @@ shape = SubResource("RectangleShape2D_hx2mk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vf8ci")
-animation = &"fall"
+animation = &"run"
 autoplay = "idle"
+frame_progress = 0.086662
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_bottom = 157
