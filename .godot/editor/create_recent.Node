@@ -1,9 +1,12 @@
+AnimationPlayer
+Sprite2D
 CollisionShape2D
-AnimatedSprite2D
 Area2D
+Node2D
+Node
+AnimatedSprite2D
 Marker2D
 CollisionPolygon2D
 Camera2D
-Sprite2D
 StaticBody2D
 CharacterBody2D

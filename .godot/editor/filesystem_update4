@@ -4,3 +4,6 @@ res://scenes/player.tscn
 res://scripts/level.gd
 res://scenes/jump_pad.tscn
 res://scripts/jump_pad.gd
+res://scenes/saw.tscn
+res://scripts/trap.gd
+res://scenes/spike_ball.tscn
