@@ -44,7 +44,6 @@ func _on_level_timer_timeout():
 		hud.set_time_label(time_left)
 		if time_left < 0:
 			reset()
-			time_left = level_time
 			hud.set_time_label(time_left)
 		
 	
@@ -56,6 +55,7 @@ func _process(delta):
 		get_tree().reload_current_scene()
 		
 func _on_death_zone_body_entered(body):
+	AudioPlayer.play_sfx("hurt")
 	reset()
 
 func _on_exit_body_entered(body):
@@ -70,10 +70,12 @@ func _on_exit_body_entered(body):
 			get_tree().change_scene_to_packed(next_level)
 	
 func _on_trap_touched_player():
+	AudioPlayer.play_sfx("hurt")
 	reset()
 
 func reset():
-	AudioPlayer.play_sfx("hurt")
+	time_left = level_time
+	hud.set_time_label(time_left)
 	reset_player()
 	reset_traps()
 	
