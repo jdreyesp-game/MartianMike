@@ -134,6 +134,7 @@ animations = [{
 size = Vector2(34, 8)
 
 [node name="Start" type="StaticBody2D"]
+collision_mask = 2
 script = ExtResource("1_acfau")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -148,4 +149,4 @@ position = Vector2(11, -4)
 shape = SubResource("RectangleShape2D_qwbee")
 
 [node name="SpawnPosition" type="Marker2D" parent="."]
-position = Vector2(12, -22)
+position = Vector2(12, -24)
