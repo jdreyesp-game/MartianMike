@@ -1,7 +1,9 @@
 extends Node2D
 
+@export var next_level: PackedScene = null
 @onready var start = $Start
 @onready var player = null
+@onready var exit = $Exit
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,6 +14,8 @@ func _ready():
 	var traps = get_tree().get_nodes_in_group("traps")
 	for trap in traps:
 		trap.touched_player.connect(_on_trap_touched_player)
+	
+	exit.body_entered.connect(_on_exit_body_entered)
 		
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -25,7 +29,13 @@ func _process(delta):
 func _on_death_zone_body_entered(body):
 	reset_player()
 
-
+func _on_exit_body_entered(body):
+	if body is Player and next_level != null:
+		exit.animate()
+		player.active = false
+		await get_tree().create_timer(1.5).timeout
+		get_tree().change_scene_to_packed(next_level)
+	
 func _on_trap_touched_player():
 	reset_player()
 

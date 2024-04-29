@@ -1,9 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://bd6d84xcnggwe"]
+[gd_scene load_steps=13 format=3 uid="uid://bd6d84xcnggwe"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ge1tt"]
 [ext_resource type="PackedScene" uid="uid://bwaiyrpnkbdms" path="res://scenes/bg.tscn" id="2_2jqr0"]
 [ext_resource type="PackedScene" uid="uid://duyxx47d7sjkl" path="res://scenes/player.tscn" id="2_a70c0"]
-[ext_resource type="PackedScene" uid="uid://vr7dhjv1xxl6" path="res://scenes/level_2.tscn" id="2_imk8b"]
 [ext_resource type="Texture2D" uid="uid://dxdv12n1px7bw" path="res://icon.svg" id="3_ndegb"]
 [ext_resource type="PackedScene" uid="uid://c7s75k24eig20" path="res://scenes/jump_pad.tscn" id="4_hl4yq"]
 [ext_resource type="PackedScene" uid="uid://bkgjy0fr6bx68" path="res://scenes/saw.tscn" id="4_lwr4h"]
@@ -20,7 +19,6 @@ size = Vector2(588, 7)
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_ge1tt")
-next_level = ExtResource("2_imk8b")
 
 [node name="BG" parent="." instance=ExtResource("2_2jqr0")]
 
@@ -78,5 +76,8 @@ position = Vector2(368, -63)
 position = Vector2(181, 69)
 collision_layer = 2
 collision_mask = 5
+gravity = null
+speed = null
+jump_force = null
 
 [connection signal="body_entered" from="DeathZone" to="." method="_on_death_zone_body_entered"]
