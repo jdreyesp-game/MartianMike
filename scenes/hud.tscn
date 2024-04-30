@@ -30,3 +30,15 @@ text = "TIME: 9999"
 label_settings = SubResource("LabelSettings_k0lms")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="NumLives" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 4.0
+offset_right = 89.0
+offset_bottom = 27.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("1_churu")
+theme_override_font_sizes/font_size = 12
+text = "LIVES: 9999"

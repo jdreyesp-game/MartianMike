@@ -24,3 +24,9 @@ func play_sfx(sfx_name: String):
 	
 	await asp.finished
 	asp.queue_free()
+
+func stop_music():
+	$MusicPlayer.stop()
+
+func start_music():
+	$MusicPlayer.play()

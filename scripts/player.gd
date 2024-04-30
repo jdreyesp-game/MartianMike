@@ -4,10 +4,12 @@ class_name Player
 @export var gravity = 400
 @export var speed = 125
 @export var jump_force = 200
+@export var num_lives = 3
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
 var active = true
+
 
 func _physics_process(delta):
 	if is_on_floor() == false:
@@ -48,4 +50,4 @@ func update_animations(direction: int):
 			animated_sprite_2d.play("fall")	
 
 func die():
-	get_tree().reload_current_scene()
+	num_lives -= 1

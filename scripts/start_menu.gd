@@ -1,5 +1,7 @@
 extends Control
 
+func _ready():
+	AudioPlayer.start_music()
 
 func start_game():
 	get_tree().change_scene_to_file("res://scenes/level.tscn")

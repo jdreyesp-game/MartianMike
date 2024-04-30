@@ -13,3 +13,10 @@ res://scenes/hud.tscn
 res://scenes/win_screen.tscn
 res://scenes/start_menu.tscn
 res://scenes/audio_player.tscn
+res://scripts/hud.gd
+res://scripts/level.gd
+res://scripts/player.gd
+res://scenes/lose_screen.tscn
+res://scripts/ui_layer.gd
+res://scripts/audio_player.gd
+res://scripts/start_menu.gd

@@ -30,6 +30,7 @@ func _ready():
 	
 	time_left = level_time
 	hud.set_time_label(time_left)
+	hud.set_lives_label(player.num_lives)
 	
 	timer_node = Timer.new()
 	timer_node.name = "Level timer"
@@ -74,14 +75,19 @@ func _on_trap_touched_player():
 	reset()
 
 func reset():
+	reset_player()
 	time_left = level_time
 	hud.set_time_label(time_left)
-	reset_player()
 	reset_traps()
 	
 func reset_player():
 	player.velocity = Vector2.ZERO
 	player.global_position = start.get_spawn_pos()
+	player.die()
+	hud.set_lives_label(player.num_lives)
+	if player.num_lives <= 0:
+		AudioPlayer.stop_music()
+		ui_layer.show_lose_screen(true)
 	
 func reset_traps():
 	for trap in get_tree().get_nodes_in_group("traps"):
