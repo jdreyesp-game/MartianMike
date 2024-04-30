@@ -6,7 +6,7 @@ class_name Player
 @export var jump_force = 200
 @export var num_lives = 3
 
-@onready var animated_sprite_2d = $AnimatedSprite2D
+@onready var animated_sprite_2d = $AnimatedSprite2D2
 
 var active = true
 
